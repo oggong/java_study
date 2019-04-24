@@ -3,8 +3,10 @@ package b_encapsulation;
 // 클래스 = 서로다른 자료형의 변수들 + 메소드들
 /*
 	캡슐화 = 권한관련부여
-	1. 멤버변수 - private
-	2. 멤버 메소드 - public 
+	1. 멤버변수 - private -- 다른 클래스에서 접근 허용 안됨 
+	
+	
+	2. 멤버 메소드 - public 모든 접근 허용
 */
 public class Main {
 
