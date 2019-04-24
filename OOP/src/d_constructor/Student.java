@@ -15,11 +15,12 @@ public class Student {
 	// Java Compiler가 자동으로 생성(아무것도 하지 않는 역할을 하나)
 	// public Student(){}
 	// -> class 만들면 기본 생송자는 만든다.
+	
 	public Student() { // 초기화 하고싶어서 생성
 		// this : 멤버를 지칭하기 위한 레퍼런스
 		// this() : 다른 생성자 함수를 호출 ----------------- this this() 혼동 주의
 		
-		this("익명", 50, 50, 50); //  반드시 첫줄에 기술
+//		this("익명", 50, 50, 50); //  반드시 첫줄에 기술
 //		this.name = "익명";
 //		this.kor = 50;
 //		this.eng = 50;
