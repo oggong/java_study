@@ -15,6 +15,7 @@ public class Main {
 
 		Student[] s = new Student[a];
 
+		
 		for (int i = 0; i < s.length; i++) {
 
 			s[i] = new Student();

@@ -2,20 +2,21 @@ package example;
 
 public class GradeExpr {
 
-	int jumsu[]; // 10, 20, 30
+	static int jumsu[];
 
-	public GradeExpr(int[] jumsu) {
+	public GradeExpr(int jumsu[]) {
 		this.jumsu = jumsu;
+
 	}
 
 	public double getAverage() {
-		double avg;
-		double total2 = 0;
+		int total2 = 0;
+		double avg = 0;
 		for (int i = 0; i < jumsu.length; i++) {
 			total2 += jumsu[i];
+			avg = total2 / jumsu.length;
 		}
-		return avg = total2 / jumsu.length;
-
+		return avg;
 	}
 
 	public int getTotal() {
@@ -27,27 +28,24 @@ public class GradeExpr {
 	}
 
 	public int getGoodScore() {
-		int max = jumsu[0];
-
+		int goodsc = jumsu[0];
 		for (int i = 0; i < jumsu.length; i++) {
-			if (max <= jumsu[i]) {
-				max = jumsu[i];
+			if (goodsc <= jumsu[i]) {
+				goodsc = jumsu[i];
 			}
-
 		}
-		return max;
+		return goodsc;
 	}
 
 	public int getBadScore() {
-		int min = jumsu[0];
-
+		int badsc = jumsu[0];
 		for (int i = 0; i < jumsu.length; i++) {
-			if (min >= jumsu[i]) {
-				min = jumsu[i];
+			if (badsc >= jumsu[i]) {
+				badsc = jumsu[i];
 			}
-
 		}
-		return min;
+
+		return badsc;
 	}
 
 }

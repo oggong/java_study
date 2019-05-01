@@ -1,0 +1,19 @@
+---------------------
+interface B{   // 추상클래스와 비슷
+	int B; // public static final
+	void B(); // public abstract
+}	
+
+class BB implements B{
+	void B(){}
+}
+---------------------
+abstract class A {
+	int A;
+	A(){}
+	void A(){}
+	abstract void AA();
+}
+class B extends A {
+	void AA(){}
+}
