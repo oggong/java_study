@@ -1,0 +1,26 @@
+
+interface AAListener{
+	void a();
+	void b();
+	void c();
+}
+
+class AAAdapter implements AAListener {
+	public void a(){}
+	public void b(){}
+	public void c(){}
+}
+
+class Myhdlr extends AAAListener{
+	public void a2(){} -------- 새로 추가 했구나! xxxx
+	public void a(){} ------------ overriding 했구나 메소드를 조금만 다르게 써도 기능이 가동되지 않음. 그러나 안써도 됨!!! 
+}
+
+class Myhdlr implements AAListener{
+	// a(),b(),c() 오버라이딩
+	
+	public void a(){}
+	public void b(){}
+	public void c(){}
+
+}

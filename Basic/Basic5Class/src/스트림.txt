@@ -1,0 +1,25 @@
+* Java IO (Input Output) - 자바 입출력
+
+	입출력 - stream
+		java.io package
+	
+	1.byte 스트림 (byte 단위로 쪼개서 보내는 것)
+		-InputStream - FileInputStream
+		-OutputStream - FileOutputStream
+		
+		+ 필터스트림
+			' DataOutputStream - DataInputStream
+			' ObjectOutputStream - ObjectOutputStream (* 직렬화 필수 )
+			
+		
+	
+	2.char 스트림 (character 단위) 2byte 문자 전송	
+		- 통로라고 이해하는건 좋지만 stream 을 제대로 이해하는게 중요
+		
+		-Reader	-FileReader
+		-Writer	-FileWriter
+		
+	cf. RandomAccessFile - 입출력 스트림을 같이 만듦.
+	
+	fos // 통로쓸때 무조건 close 잘 해줘야함.
+	
