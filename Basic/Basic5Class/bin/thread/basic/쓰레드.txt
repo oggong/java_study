@@ -1,0 +1,13 @@
+
+` program : software 일종
+` process : 현재 cpu가 실행중인 프로그램
+	-thread : 한 프로세스 안에서 동시에(?) 여러 작업
+	-제어 하는 것이 어려움!
+	
+	
+	
+	*자바의 쓰레드 처리 절차
+		1. Thread 상속(Runnable 구현)
+			-run() 오버라이딩
+		2. start() 호출 -> run() 호출됨
+		

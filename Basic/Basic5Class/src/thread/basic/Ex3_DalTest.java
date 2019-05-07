@@ -1,76 +1,79 @@
 package thread.basic;
+
 import java.awt.*;
 import javax.swing.*;
 
-
 public class Ex3_DalTest extends Frame {
-	
+
 	Dal a, b, c;
-	
-	public Ex3_DalTest()
-	{
-		setSize( 500, 400 );
-		setVisible( true );
+
+	public Ex3_DalTest() {
+		setSize(500, 400);
+		setVisible(true);
 
 		a = new Dal(this, 0, 50);
 		b = new Dal(this, 0, 100);
 		c = new Dal(this, 0, 150);
-		
-		// # 
-		// 각 객체의 쓰레드 메소드(run) 호출한다 
 
-		
-	}	
-	
+		// #
+		// 각 객체의 쓰레드 메소드(run) 호출한다
+		// 공정하게 해주려면 dal 이라는 배열 만들어서 random 처리 해주어야 함!!!
+		new Thread(a).start(); // Thread 함수 호출 후 start
+		new Thread(b).start();
+		new Thread(c).start();
+		// a.start();
+		// b.start();
+		// c.start();
 
-
-	public void paint( Graphics g )
-	{
-		g.setColor(Color.red);
-		g.drawString("__@", a.x, a.y );
-
-		g.setColor(Color.blue);
-		g.drawString("__@", b.x, b.y );
-
-		g.setColor(Color.green);
-		g.drawString("__@", c.x, c.y );
-			
 	}
 
-	public static void main(String args[] )
-	{
+	public void paint(Graphics g) {
+		g.setColor(Color.red);
+		g.drawString("__@", a.x, a.y);
+
+		g.setColor(Color.blue);
+		g.drawString("__@", b.x, b.y);
+
+		g.setColor(Color.green);
+		g.drawString("__@", c.x, c.y);
+
+	}
+
+	public static void main(String args[]) {
 		Ex3_DalTest dal = new Ex3_DalTest();
+
 	}
 
 }
 
 /*
-# Thread 처리
-(1) Thread 클래스나 Runnable 인터페이스 상속
-(2) run() 오버라이딩
-
-	- 임의의 수를 speed 값으로 지정		
-	- x 값을 위의 임의의 수를 더하기
-	- 화면을 다시 그린다 (*) app.repaint() 이용
-	- 임의의 수만큼 잠시 쓰레드를 블럭한다
-	# 위의 작업을 반복한다
-*/
-class Dal 
-{
+ * # Thread 처리 (1) Thread 클래스나 Runnable 인터페이스 상속 (2) run() 오버라이딩
+ * 
+ * - 임의의 수를 speed 값으로 지정 - x 값을 위의 임의의 수를 더하기 - 화면을 다시 그린다 (*) app.repaint() 이용
+ * - 임의의 수만큼 잠시 쓰레드를 블럭한다 # 위의 작업을 반복한다
+ */
+//class Dal extends Thread {
+class Dal implements Runnable {
 	int x, y;
 	int speed;
 	Frame app;
-	
-	public Dal( Frame _app, int _x, int _y )
-	{
+
+	public Dal(Frame _app, int _x, int _y) {
 		app = _app;
 		x = _x;
-		y = _y;	
+		y = _y;
 	}
-	
-	public void run()
-	{
-		
 
-	}	
+	public void run() {
+		while (true) {
+			speed = (int) (Math.random() * 10); // 0~9 임의의 수
+			x += speed;
+			app.repaint();
+			try {
+				Thread.sleep(speed * 100);
+			} catch (InterruptedException e) {
+			}
+		}
+
+	}
 }
