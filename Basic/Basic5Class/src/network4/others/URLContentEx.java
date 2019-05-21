@@ -6,7 +6,7 @@ public class URLContentEx {
 	public static void main(String[] args) {
 		try{
 			
-			URL url = new URL("http://www.daum.net");
+			URL url = new URL("https://www.daum.net");
 			BufferedReader  input = new BufferedReader( new InputStreamReader( url.openStream()));
 			String line = "";
 			while( (line=input.readLine())  != null ) {

@@ -1,0 +1,48 @@
+
+#### JDBC 연동 절차
+
+1. 해당 드라이버 메모리 로딩 
+(자바가 오라클을 인식 하려면 DRIVER 가 필요했음)
+ ------ 드라이버 연결 
+
+2. 연결 객체를 얻어오기 
+	INPUTSTREAM / OUTPUTSTREAM / SOCKET
+	
+	
+3. sql 문장 만들기 (*****) 
+
+4. sql 전송 객체 얻어오기 
+	- Statement  : 완벽한 sql
+	- PreparedStatement : 미완성된 sql
+	- CallableStatement : pl-sql procedure/function 호출 시 
+	
+5. sql 전송
+	- INSERT /DELETE /UPDATE /(DDL): int excuteUpdate()로 전송 (database로의 전송)
+	- SELECT : ResultSet excuteQuery()
+
+-- 우리는 주로 DML 을 사용한다 .
+
+6. 결과 처리
+
+7. 닫기 
+	(연결 닫기 제일 중요함)
+
+
+
+*** 정부지침에 따라서 statement 보다는 preparestatement 사용을 한다.
+
+ ;shutdown; 을 사용해서 statement 일때 서버가 다운된 사례가 있기 때문에 
+ 
+ 반복해서 실행되는 동일 쿼리의 속도를 증가시키기 위해서
+ 값 변환을 자동으로 하기 위해
+ 간결한 코드를 위해
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
