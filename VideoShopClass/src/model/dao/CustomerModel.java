@@ -30,7 +30,7 @@ public class CustomerModel implements CustomerDao {
 		// 3. sql 문장 만들기
 		st = con.prepareStatement(sql);
 		st.setString(1, vo.getCustName());
-		st.setString(2, vo.getCustName());
+		st.setString(2, vo.getCustTel1());
 		st.setString(3, vo.getCustTel2());
 		st.setString(4, vo.getCustAddr());
 		st.setString(5, vo.getCustEmail());
