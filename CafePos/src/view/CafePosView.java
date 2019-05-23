@@ -13,6 +13,7 @@ public class CafePosView extends JPanel {
 
 	JTextArea taOrderPrice;
 	JButton bPayment, bCancel;
+	Font f = new Font("맑은 고딕",Font.BOLD,15);
 
 	// 멤버 객체 선언
 	public CafePosView() {
@@ -54,23 +55,23 @@ public class CafePosView extends JPanel {
 		// 위쪽 영역 - 상품
 		JPanel p_north = new JPanel();
 		p_north.setLayout(new GridLayout(6, 3));
-		p_north.setBorder(new TitledBorder("north"));
+		p_north.setBorder(new TitledBorder("제품"));
 
-		p_north.add(new JLabel("아메리카노"));
-		p_north.add(new JLabel("카페라떼"));
-		p_north.add(new JLabel("카페모카"));
-		p_north.add(bAmericano);
+		p_north.add(new JLabel("아메리카노",SwingConstants.CENTER)); // 라벨 들어갈 내용 중앙 정렬
+		p_north.add(new JLabel("카페라떼",SwingConstants.CENTER));
+		p_north.add(new JLabel("카페모카",SwingConstants.CENTER));
+		p_north.add(bAmericano, new ImageIcon());
 		p_north.add(bCafelatte);
 		p_north.add(bCafemoca);
-		p_north.add(new JLabel("레몬에이드"));
-		p_north.add(new JLabel("베이글"));
-		p_north.add(new JLabel("우유"));
+		p_north.add(new JLabel("레몬에이드",SwingConstants.CENTER));
+		p_north.add(new JLabel("베이글",SwingConstants.CENTER));
+		p_north.add(new JLabel("우유",SwingConstants.CENTER));
 		p_north.add(bLemonade);
 		p_north.add(bBagel);
 		p_north.add(bMilk);
-		p_north.add(new JLabel("케이크"));
-		p_north.add(new JLabel("물"));
-		p_north.add(new JLabel("맥주"));
+		p_north.add(new JLabel("케이크",SwingConstants.CENTER));
+		p_north.add(new JLabel("물",SwingConstants.CENTER));
+		p_north.add(new JLabel("맥주",SwingConstants.CENTER));
 		p_north.add(bCake);
 		p_north.add(bWater);
 		p_north.add(bBeer);
@@ -78,7 +79,7 @@ public class CafePosView extends JPanel {
 		// 아래쪽 영역 - 주문,결제
 		JPanel p_south = new JPanel();
 		p_south.setLayout(new BorderLayout());
-		p_south.setBorder(new TitledBorder("south"));
+//		p_south.setBorder(new TitledBorder("south"));
 
 		// 아래쪽 영역 - 주문
 		JPanel p_south_west = new JPanel();
