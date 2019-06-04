@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 연습</title>
+<style type='text/css'>		/* 가중치  */
+	#point100{color :cyan;} /* 100  */
+	div{color :red;} /* 1 */
+	div{color :orange;}/* 1 */ /* 빨간색이 있으나 오렌지 색이 나옴 (오렌지가 빨간색위로 덮음) */
+	.point10 {color:green;}/* 10 */ /* 아무리 green 이어도 cyan의 가중치가 높기 때문에 cyan이 나옴 */
+	
+	body div#point100 {color:gray;} /*  cyan 에서 gray로 처리  */
+
+		input {border: 1px dotted green;} /* 첫번째 텍스트 필드만  */
+		input[type='text'] {border: 2px solid red;} /*type ='text'인 것 모두 처리 */
+		
+		/*input 요소의 첫번째 요소를 테두리 변경  */ 
+		input:first-of-type {border: 2px dashed #121212;} 
+		/*input 요소의 마지막 번 째 요소를 테두리 변경  */ 
+		input:last-of-type {border: 2px dashed #121212;}
+		/*input 요소의 다섯번 째 요소를 테두리 변경  */ 
+		input:nth-child(5) {border: 2px dashed yellow;} /* p로 적용 하려면 어떻게 해야하나   */
+		/*input 요소의 마지막에서 두 번째 요소를 테두리 변경  */ 
+		input:nth-last-child(2) {border: 3px solid brown;}
+</style>
+</head>
+<body>
+
+
+	<div id="point100" class="point10">안녕하세요</div>
+	
+	
+	<p>
+		<input type="text" value="입력1">
+		<input type="checkbox"> 선택
+		<input type="radio" name="rd"  checked="checked"> 예
+		<input type="radio" name="rd"> 아니오
+		<input type="text" value="입력2" disabled="disabled">		
+		<input type="button" value="확인">
+		<input type="button" value="취소">
+	</p>
+	
+	
+</body>
+</html>

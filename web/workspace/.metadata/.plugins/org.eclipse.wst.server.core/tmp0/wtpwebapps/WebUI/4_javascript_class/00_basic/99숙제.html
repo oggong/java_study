@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99_hw.html</title>
+    <!--    달력 만들기-->
+    <script type="text/javascript">
+
+        var today = new Date();
+        document.write(today + '<br>');
+        var year1 = today.getFullYear(); // 2019
+        var month1 = today.getMonth() + 1; // 6
+        var date1 = today.getDate(); // 3
+        var day1 = today.getDay(); // 1 // 오늘의 요일, 월요일
+        var startDate = new Date(today.setDate(0)).getDay(); // 5 // 전달의 마지막 요일, 금요일
+
+        document.write(year1, month1, date1, day1 + '<br>');
+        document.write(startDate + '<br>');
+
+        var nextMonth = new Date();
+        nextMonth.setMonth(month1);
+        document.write(nextMonth + '<br>');
+        document.write('==============' + '<br>');
+        nextMonth.setDate(0);
+        document.write(nextMonth.getDate() + '<br>'); // 30, 이번 달의 마지막 요일
+        var lastDate = nextMonth.getDate();
+
+        document.write("<table border='3px'>");
+        document.write("<tr rowspan='5'>" + month1 + "월 달력</tr>");
+        document.write("<tr>");
+        document.write("<td>" + "일요일" + "</td>");
+        document.write("<td>" + "월요일" + "</td>");
+        document.write("<td>" + "화요일" + "</td>");
+        document.write("<td>" + "수요일" + "</td>");
+        document.write("<td>" + "목요일" + "</td>");
+        document.write("<td>" + "금요일" + "</td>");
+        document.write("<td>" + "토요일" + "</td>");
+        document.write("</tr>");
+
+        var k = 1;
+        document.write("<tr>");
+        for (var aa = 0; aa < 7; aa++) {
+            if (aa > startDate) {
+                document.write("<td>" + k + "</td>");
+                k = k + 1;
+            } else {
+                document.write("<td>" + " " + "</td>");
+            }
+        }
+        document.write("<tr>");
+        for (var i = 0; i < 5; i++) {
+            document.write("<tr>");
+            for (var j = 0; j < 7; j++, k++) {
+                if (k <= lastDate) {
+                document.write("<td>" + k + "</td>");
+                }
+                else document.write("<td>" + " " + "</td>");
+            }
+            document.write("</tr>");
+        }
+
+
+        document.write("</table>");
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

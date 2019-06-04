@@ -1,0 +1,5 @@
+
+6월 04, 2019 19:34:12.66 NEW SESSION
+6월 04, 2019 19:34:12.66 [2504:2332:0604/193412.655:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 04, 2019 19:37:20.97 [2504:14324:0604/193720.970:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 04, 2019 19:37:21.05 [2504:2332:0604/193721.055:ERROR:browser_process_sub_thread.cc(217)] Waited 27 ms for network service

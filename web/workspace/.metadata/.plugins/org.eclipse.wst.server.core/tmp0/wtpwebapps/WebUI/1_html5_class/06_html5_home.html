@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<fieldset>
+		<legend>로그인 정보</legend>
+		<ol>
+		<li><label for='id'>아이디</label><input type='text' name='id'
+			id='id' required/></li>
+		<li><label for='password'>비밀번호</label><input type='password' name='password'
+			id='password' required/></li>	
+		<li><label for='passwordcofirm'>비밀번호</label><input type='password' name='passwordconfirm'
+			id='passwordconfirm' required/></li>		
+		<li><label for='grade'>회원 등급 <select name='grade'>
+		<option value=''>준회원</option>
+		</select>	
+		</ol>
+	</fieldset>
+	<fieldset>
+		<legend>개인 정보</legend>
+		<ol>
+			<li><label for='name'>이름 </label> <input type='text' name='name'
+				id='name' placeholder='5자미만 공백없이' required /></li>
+			<li><label for='email'>이메일 </label> <input type='email' name='email'
+				id='email' placeholder='abcd@domain.com' required /></li>
+				<li><label for='tel'>연락처 </label> <input type='tel' name='tel'
+				id='tel' placeholder='010-0000-0000' required /></li>
+			<li><label for='mybirth'>생일 </label><input type='date' name='mybirth'
+			id='mybirth' placeholder='연도-월-일'/></li>		
+		</ol>
+	</fieldset>
+	<fieldset>
+		<legend>코딩 숙련도(상,중,하)</legend>
+		<li><input type='range' name='range' min='1' max='3'/></li>
+	</fieldset>
+	<fieldset>
+		<input type='submit' name='submit'>
+	</fieldset>
+</body>
+</html>

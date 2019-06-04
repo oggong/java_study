@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="EUC-KR">
+<title>Ex_good.html</title>
+
+<style type='text/css'>
+#txt {
+	color: red;
+}
+</style>
+
+
+</head>
+<body>
+	<!-- 수백까지 div 가 있으니 찾기 쉽게이름을 부여 -->
+	<div id='txt'>표준안을 따름</div>
+
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var txt = document.getElementById('txt');
+			txt.onclick = function() {
+				alert('확인');
+			}
+
+		}
+	</script>
+
+</body>
+</html>

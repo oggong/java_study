@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>4_iframe_연습.html</title>
+
+<script type="text/javascript">
+		function changeSite() {
+			var siteCheck = document.frm.site.value;		
+			var ifrm = document.getElementById('ifrm');
+
+			switch (siteCheck) {
+			case '다음':
+				ifrm.src = 'http://www.daum.net';
+				break;
+			case '다나와':
+				ifrm.src = 'http://www.danawa.com';
+				break;
+			case '네이트':
+				ifrm.src = 'http://www.nate.com';
+				break;
+			}
+		}
+	
+	//http://postcode.map.daum.net/guide
+</script>
+</head>
+<body>
+
+	<form name="frm">
+		<input type="radio" name="site" onclick="changeSite()" value='다음'> 다음 
+		<input type="radio" name="site" onclick="changeSite()" value='다나와'> 다나와 
+		<input type="radio"	name="site" onclick="changeSite()" value='네이트'> 네이트 <br /> <br />
+
+	</form>
+	<iframe name='ifrm' id='ifrm' width="800" height="800" src = ""> </iframe>
+
+</body>
+</html>

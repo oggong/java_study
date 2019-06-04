@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>9_2 sub.html</title>
+<script type="text/javascript">
+	
+	window.onload = function() {
+
+		var rds = document.frm2.loc;
+
+		for (var i = 0; i < rds.length; i++) {
+			rds[i].onclick = changeLoc;
+		}
+	
+		function changeLoc() {
+
+			opener.frm1.site.value = document.frm2.loc.value;
+		}
+
+	}
+</script>
+
+</head>
+<body>
+	<form name='frm2'>
+	<input type='text' name ='city' /><br/>
+		<input type='radio' name='loc' value='가산'>가산<br/> 
+		<input type='radio' name='loc' value='강남'>강남<br/> 
+		<input type='radio' name='loc' value='남부터미널'>남부터미널<br/>
+
+	</form>
+	
+
+</body>
+</html>

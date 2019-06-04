@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>2_operator.html</title>
+<script type="text/javascript">
+	// 1. == 와 === 차이점
+	
+	var num = 10;
+	var str = '10';
+	
+	if(num == str) alert('같다1'); // 첫번째는 값만 비교 // 자바스크립트의 특성 (자료형을 구분 하지 않는다)
+	else alert('다르다1');
+	
+	if(num === str) document.write('같다2 <br/>'); // 두번째는 값과 자료형 모두 비교 !!! 
+	else document.write('다르다2 <br/>');
+	
+	if(num !== str) document.write('not 같다  <br/>'); // NOT 연산자 
+	else document.write('not 다르다  <br/>');
+	
+	
+	//2. 실수형 계산시 주의!!!
+	
+	document.writeln(0.2*3 == 0.6 +'<br/>'); // true-> false
+	
+	document.write(0.2*3); //  0.6000000000000001
+	
+	document.write(0.2*10*3 == 0.6*10); // 정수로 만들어 놓고 계산
+	
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

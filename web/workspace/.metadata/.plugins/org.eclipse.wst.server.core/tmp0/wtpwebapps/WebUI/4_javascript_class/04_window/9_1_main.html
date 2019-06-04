@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>9_1 main.html</title>
+
+<script type="text/javascript">
+	window.onload = function() {
+		var sel = document.frm1.chooseSite;
+		var winObj = window.open('9_2_sub.html', '', 'width=480 , height= 400');
+		
+			winObj.moveTo(screen.availWidth/4,screen.availHeight/4);
+		sel.onchange = showSite;
+
+		function showSite() {
+
+			var idx = sel.selectedIndex;
+			
+			switch (idx) {
+			case 1: winObj.frm2.city.value = sel.value;	break;
+			case 2: winObj.frm2.city.value = sel.value; break;
+			case 3: winObj.frm2.city.value = sel.value; break;
+			case 4: winObj.frm2.city.value = sel.value; break;
+			}
+		}
+	}
+</script>
+
+</head>
+<body>
+	<form name="frm1">
+		<select name="chooseSite">
+			<option>도시 선택</option>
+			<option value='서울시'>서울시</option>
+			<option value='부천시'>부천시</option>
+			<option value='인천시'>인천시</option>
+			<option value='성남시'>성남시</option>
+		</select><br /> <input type='text' name='site' />
+	</form>
+</body>
+</html>

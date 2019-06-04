@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>3_for.html</title>
+<script type="text/javascript">
+
+	var arr= ['a','b','c'];
+	
+	for(var i=0;i<arr.length;i++){
+		document.write(arr[i]+"<br/>");
+	}// for 문
+	
+	for(var i in arr){
+		document.write( arr[i] +"<br/>");
+	}// 향상된 for문
+	
+	var obj = {x:'안녕',y:'hello',z:'Hola'};
+	
+	obj.w = '곤니치와';
+	
+	for(var i in obj){
+		document.write(typeof(i)+":" +obj[i] +"<br/>"); // obj.i 로 하면 undefined 출력
+	}
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

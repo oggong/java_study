@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>6_date.html</title>
+
+<script type="text/javascript">
+	//var d = new Date("2019/06/02");
+	var d = new Date();
+	d.setFullYear(2019);
+	d.setMonth(5); // 달은 0부터 시작 6월이면 5를 넣어주어야한다.
+	d.setDate(3);
+
+	document.write(d + '<br/>'); //Mon Jun 03 2019 12:50:32 GMT+0900 (한국 표준시)
+	document.write(d.toLocaleString() + '<br/>'); // 2019. 6. 3. 오후 12:50:32
+	document.write(d.toString() + '<br/>'); //	Mon Jun 03 2019 12:50:32 GMT+0900 (한국 표준시)
+	document.write(d.toDateString() + '<br/>'); // Mon Jun 03 2019
+	document.write(typeof (d) + '<br/>');
+	document.write(d.getFullYear() + '<br/>'); //  2019
+	document.write(d.getMonth() + '<br/>'); //5
+	document.write(d.getDate() + '<br/>'); // 2
+	document.write(d.getDay() + '<br/>'); // 요일 ->1(월), 0(일)
+
+	d.setDate(d.getDate() - 10);
+	document.write(d.toDateString() + '<br/>'); // 10일을 뺌
+	
+	d.setMonth(d.getMonth() - 10);
+	document.write(d.toDateString() + '<br/>'); // 10달을 뺌
+
+	
+	d.setDate(0);
+	document.write(d.toDateString() + '<br/>'); // 전 달의 마지막 일 
+	
+	document.write(d.getHours() +'<br/>');
+	document.write(d.getMinutes() +'<br/>');
+	document.write(d.getSeconds() + '<br/>');
+	
+	
+	
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

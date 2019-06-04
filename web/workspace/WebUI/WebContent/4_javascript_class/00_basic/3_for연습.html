@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">	
+<title>3_for연습.html</title>
+
+<script type="text/javascript">
+<!-- 5행 5열 테이블을 만드시고 1~ 25 까지 숫자 지정-->
+	document.write("<table border='1'>");
+	var k = 1;
+	for (var i = 0; i < 5; i++) {
+		document.write("<tr>");
+		for (var j = 0; j < 5; j++, k++) {
+			document.write("<td>" + k + "</td>");
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
