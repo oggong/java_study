@@ -3,3 +3,51 @@
 6월 04, 2019 19:34:12.66 [2504:2332:0604/193412.655:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
 6월 04, 2019 19:37:20.97 [2504:14324:0604/193720.970:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
 6월 04, 2019 19:37:21.05 [2504:2332:0604/193721.055:ERROR:browser_process_sub_thread.cc(217)] Waited 27 ms for network service
+
+6월 08, 2019 18:58:46.78 NEW SESSION
+6월 08, 2019 18:58:46.78 [14132:15396:0608/185846.781:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.51 [14132:15396:0608/185912.513:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.53 [14132:15396:0608/185912.533:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.54 [14132:15396:0608/185912.538:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.54 [14132:15396:0608/185912.539:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.56 [14132:15396:0608/185912.540:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.56 [14132:15396:0608/185912.542:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:12.56 [14132:15396:0608/185912.543:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 18:59:13.53 [14132:15396:0608/185913.532:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 20:04:12.37 [14132:15396:0608/200412.372:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 20:40:12.64 [14132:15396:0608/204012.639:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:02:17.59 [14132:15396:0608/210217.594:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 08, 2019 21:02:17.62 [14132:15396:0608/210217.627:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+6월 08, 2019 21:23:24.95 [14132:15396:0608/212324.952:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 08, 2019 21:23:25.07 [14132:15396:0608/212325.076:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 08, 2019 21:23:28.47 [14132:15396:0608/212328.472:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 08, 2019 21:23:32.98 [14132:15396:0608/212332.983:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 08, 2019 21:44:12.29 [14132:15396:0608/214412.295:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.72 [14132:15396:0608/215930.721:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.73 [14132:15396:0608/215930.728:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.74 [14132:15396:0608/215930.730:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.74 [14132:15396:0608/215930.733:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.75 [14132:15396:0608/215930.737:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.75 [14132:15396:0608/215930.740:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.76 [14132:15396:0608/215930.753:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:30.76 [14132:15396:0608/215930.755:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 21:59:32.73 [14132:15396:0608/215932.732:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 08, 2019 22:38:16.57 [14132:15396:0608/223816.572:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 08, 2019 22:38:16.59 [14132:15396:0608/223816.579:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 08, 2019 23:04:12.37 [14132:15396:0608/230412.375:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 24:04:11.52 [14132:15396:0609/000411.521:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 24:53:22.17 [14132:15396:0609/005322.175:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 09, 2019 24:53:22.25 [14132:15396:0609/005322.259:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 09, 2019 24:56:19.46 [14132:15396:0609/005619.462:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 09, 2019 24:56:23.05 [14132:15396:0609/005623.056:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 09, 2019 01:04:13.28 [14132:15396:0609/010413.283:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.66 [14132:15396:0609/010434.659:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.67 [14132:15396:0609/010434.660:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.71 [14132:15396:0609/010434.711:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.74 [14132:15396:0609/010434.740:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.76 [14132:15396:0609/010434.747:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.77 [14132:15396:0609/010434.748:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.79 [14132:15396:0609/010434.756:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:34.81 [14132:15396:0609/010434.758:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 01:04:35.81 [14132:15396:0609/010435.810:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED
+6월 09, 2019 02:09:13.28 [14132:15396:0609/020913.274:ERROR:appcache_update_url_loader_request.cc(174)] NOT IMPLEMENTED

@@ -5,13 +5,53 @@
 <title> 폼 예제 2</title>
 </head>
 <script type="text/javascript">
+	
+		window.onload = function(){
+
+			var upBtn = document.getElementById('up');
+			upBtn.onclick = function(){
+				//alert('up');
+				var idx = document.frm.play.selectedIndex; // 선택한 인덱스를 얻어오기 
+				var optSel = document.frm.play.options; // options 는 배열로 넘어간다. -s-
+				var str = optSel[idx].text; //text 인지 value 인지 잘 확인
+				
+				if(idx>0){
+				
+				optSel[idx].text = optSel[idx-1].text;
+				optSel[idx-1].text =str;
+				optSel[idx-1].selected = true; 
+				
+				//alert(str);
+				}
+			}
+			
+			var downBtn = document.getElementById('down');
+			downBtn.onclick = function(){
+				//alert('down');
+				var idx = document.frm.play.selectedIndex;
+				var optSel = document.frm.play.options;
+				var str = optSel[idx].text;
+				
+				if(idx< optSel.length -1){
+					optSel[idx].text =optSel[idx+1].text;
+					optSel[idx+1].text =str;
+					optSel[idx+1].selected = true;
+				}
+			}
+			
+			//document.getElementById('down').onclick = function(){
+			// alert('down');
+			//}
+		}
+
+
 </script>
 <body>
 
 내가 제일 좋아하는 놀이 순서대로 한다면 <br>
 
 <form name="frm">
-<select name="play" size="8">
+<select name="play" size="8"> <!-- 사이즈 지정 -->
 	<option selected> 숨쉬기 </option>
 	<option> 밥먹기 </option>
 	<option> 그냥있기 </option>

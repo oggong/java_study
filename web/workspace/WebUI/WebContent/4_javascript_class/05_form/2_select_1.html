@@ -2,51 +2,72 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title> 이벤트 예제 2 </title>
+<title>이벤트 예제 2</title>
 <script type="text/javascript">
+	window.onload = function() {
+
+		// 
+		var mango = document.frm.mango; // id로 있으면 getElementById ,
+		//name 이면 form 태그 안에 있는지 확인 후 document 로 찾기
+		// value를 써주면 태그 사이 값을 value 로 가져옴
+		var avocado = document.frm.avocado;
+
+		mango.onchange = cal;
+		avocado.onchange = cal;
+
+		function cal() {
+			document.frm.total.value = mango.value * 4000 
+			+ avocado.value* 5000; // 화면에 뜨자마자 total 값에 넣어줌	
+		}
+		
+	//	mango.onchange = function(){
+		//	document.frm.total.value = mango.value * 4000 
+		//	+ avocado.value* 5000; // 화면에 뜨자마자 total 값에 넣어줌	
+		//} ---------------------------------------------------------> 한번 쓸때 축약 사용 가능!
+
+	}
 </script>
-	
+
 </head>
 <body>
-주문서 <hr>
+	주문서
+	<hr>
 
-<form name="frm">
-	<table border='1' >
-		<tr>
-			<th> 상품 </th> <th> 단가 </th> <th> 주문수량 </th>
-		</tr>
-		<tr>
-			<td> 망고 </td> 
-			<td> 4000원 </td>
-			<td>
-				<select name="mango" >
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-				</select> 뭉치
-			</td>
-		</tr>
-		<tr>
-			<td> 아보카도 </td> 
-			<td> 5000원 </td>
-			<td>
-				<select name="avocado" >
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-				</select> 봉다리
-			</td>
-		</tr>
-		<tr>
-			<td colspan=2> 함계 </td>
-			<td><input type="text" name="total" size=6>원</td>
-		</tr>		
-		<tr>
-		
-		</tr>
-	</table>
-</form>
+	<form name="frm">
+		<table border='1'>
+			<tr>
+				<th>상품</th>
+				<th>단가</th>
+				<th>주문수량</th>
+			</tr>
+			<tr>
+				<td>망고</td>
+				<td>4000원</td>
+				<td><select name="mango">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+				</select> 뭉치</td>
+			</tr>
+			<tr>
+				<td>아보카도</td>
+				<td>5000원</td>
+				<td><select name="avocado">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+				</select> 봉다리</td>
+			</tr>
+			<tr>
+				<td colspan=2>함계</td>
+				<td><input type="text" name="total" size=6>원</td>
+			</tr>
+			<tr>
+
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

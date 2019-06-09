@@ -4,9 +4,44 @@
 <meta charset="UTF-8">
 <title> 폼 예제 3 </title>
 <script type="text/javascript">
-<!--
+	
+	window.onload =  function(){
 
-//-->
+		
+		
+		
+		document.getElementById('btn').onclick = function(){
+				
+			var myDate = new Date();
+			
+			//사용자 입력 값으로 년,월,일 을 지정(변경)
+		/* 	myDate.setFullYear(document.frm1.y.value);
+			myDate.setMonth(document.frm1.m.value -1);
+			// 0 부터 시작하므로 -1 해줘야 알맞은 값이 나옴
+			myDate.setDate(document.frm1.d.value);
+			
+			alert(myDate); */
+			
+			var y = frm1.y.value;
+			
+			var m = frm1.m.value;
+			
+			var d = frm1.d.value;
+			
+			var myDate = new Date(y+'/'+m+'/'+d);
+			
+			
+			//var weeks = [];   
+			var weeks = new Array('일','월','화','수','목','금','토');
+			
+			document.frm1.w.value = weeks[myDate.getDay()];
+			
+		
+		}	
+		
+	}
+
+
 </script>
 </head>
 <body>
@@ -19,7 +54,7 @@
 	<input type="text" name="y" size=4>년 
 	<input type="text" name="m" size=2>월
 	<input type="text" name="d" size=2>일
-	<input type="button" value="☞" >
+	<input type="button" id='btn' value="☞" >
 	<input type="text" name="w" size=4>요일입니다.
 </form>
 
